@@ -13,14 +13,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Register Demo',
+      title: 'Money Manager',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: GoogleFonts.poppinsTextTheme().copyWith(
-          bodyLarge: const TextStyle(fontWeight: FontWeight.w700), 
+          bodyLarge: const TextStyle(fontWeight: FontWeight.w700),
         ),
       ),
-      home: const LoginScreen(), 
+      home: const LoginScreen(),
+      routes: {
+        '/login': (_) => const LoginScreen(),
+        '/register': (_) => const RegisterScreen()
+      },
     );
   }
 }

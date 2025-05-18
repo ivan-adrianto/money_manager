@@ -109,7 +109,7 @@ class LoginScreen extends StatelessWidget {
                               style: AppTextStyles.linkText,
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  print('tapped');
+                                  Navigator.pushNamed(context, '/register');
                                 })
                         ])),
                   )
