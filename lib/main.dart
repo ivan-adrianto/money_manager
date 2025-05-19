@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:money_manager/screens/home/home.dart';
 import 'package:money_manager/screens/login/login.dart';
 import 'screens/register/register.dart'; // Import it
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
           bodyLarge: const TextStyle(fontWeight: FontWeight.w700),
         ),
       ),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
       routes: {
         '/login': (_) => const LoginScreen(),
         '/register': (_) => const RegisterScreen()
