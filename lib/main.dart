@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:money_manager/screens/home/home.dart';
 import 'package:money_manager/screens/login/login.dart';
+import 'package:money_manager/screens/new_transaction/new_transaction.dart';
 import 'screens/register/register.dart'; // Import it
 
 void main() {
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
       home: const HomeScreen(),
       routes: {
         '/login': (_) => const LoginScreen(),
-        '/register': (_) => const RegisterScreen()
+        '/register': (_) => const RegisterScreen(),
+        '/new-transaction': (_) => const NewTransactionScreen()
       },
     );
   }

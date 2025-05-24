@@ -13,7 +13,9 @@ class TransactionsScreen extends StatelessWidget {
         height: 54,
         width: 54,
         child: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/new-transaction');
+          },
           backgroundColor: AppColors.primaryBlue,
           shape: const CircleBorder(),
           child: Icon(
@@ -40,7 +42,7 @@ class TransactionsScreen extends StatelessWidget {
                       ),
                       Text(
                         'Mei',
-                        style: AppTextStyles.monthText,
+                        style: AppTextStyles.headerText,
                       ),
                       SizedBox(
                         width: 6,
