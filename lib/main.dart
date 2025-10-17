@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           bodyLarge: const TextStyle(fontWeight: FontWeight.w700),
         ),
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
       routes: {
         '/login': (_) => const LoginScreen(),
         '/register': (_) => const RegisterScreen(),
